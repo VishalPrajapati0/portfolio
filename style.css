@@ -199,17 +199,20 @@ nav{
     display: flex;
     gap: 20px;
 }
-.featured-text-btn>.blue-btn{
-    background: var(--first-color);
-    color: var(--color-white);
+.featured-text-btn>.blue-btn {
+    /* background: var(--first-color);
+    color: var(--color-white); */
+    color: #333;
 }
 .featured-text-btn>.blue-btn:hover{
-    background: var(--first-color-hover);
+    background: #00C9FF;
+    color: #fff;    
 }
 .social_icons{
     display: flex;
     margin-top: 5em;
     gap: 30px;
+    
 }
 .icon{
     display: flex;
@@ -622,17 +625,29 @@ footer{
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
-@media only screen and (max-width: 540px){
-    .featured-name{
-        font-size: 40px;
+/* Styles for small screens */
+@media only screen and (max-width: 540px) {
+    /* Adjust font size for headings or titles */
+    .featured-name {
+        font-size: 40px; /* Ensure readability on small screens */
     }
-    .project-box{
+
+    /* Ensure project boxes are responsive */
+    .project-box {
         width: 100%;
+        margin: 0 auto; /* Center the box if needed */
     }
-    .form-inputs{
+
+    /* Arrange form inputs vertically */
+    .form-inputs {
+        display: flex;
         flex-direction: column;
+        gap: 10px; /* Adds spacing between inputs */
     }
-    .input-field{
-        width: 100%;
-    }
+
+    /* Make input fields full width */
+    .input-field {
+        width: 100%;
+        padding: 10px; /* Ensure good touch target size */
+    }
 }
